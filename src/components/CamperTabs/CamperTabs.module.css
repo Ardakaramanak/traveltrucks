@@ -1,0 +1,152 @@
+
+.section {
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.tabs button {
+  position: relative;
+  padding: 20px 0;
+  border: none;
+  background: transparent;
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tabs button.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  height: 4px;
+  background-color: #829b91;
+  content: "";
+}
+
+.content {
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border-radius: 100px;
+  background-color: #f2f4f7;
+  color: #101828;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.heading {
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dadde1;
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.detailRow span:last-child {
+  text-align: right;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.review {
+  color: #475467;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #f2f4f7;
+  color: #829b91;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reviewer h3 {
+  margin: 0 0 4px;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stars {
+  margin: 0;
+  color: #ffc531;
+  font-size: 16px;
+}
+
+.comment {
+  margin: 0;
+  color: #475467;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 20px;
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+
+  .tabs button {
+    font-size: 18px;
+  }
+}
