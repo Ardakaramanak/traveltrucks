@@ -62,14 +62,9 @@ export default function CamperCard({ camper }) {
           {camper.form && <span>{camper.form}</span>}
         </div>
 
-        <Link
-          to={`/catalog/${camper.id}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.button}
-        >
-          Show more
-        </Link>
+        <Link to={`/catalog/${camper.id}`} className={styles.button}>
+  Show more
+</Link>
       </div>
     </article>
   );
